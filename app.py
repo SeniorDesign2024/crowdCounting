@@ -58,4 +58,4 @@ def generate_random_string(length):
     return ''.join(random.choice(characters) for _ in range(length))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, threaded=True)
