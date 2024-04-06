@@ -46,7 +46,7 @@ def countingService():
         f.write(image_bytes)
     
     # Run algorithm (you would replace this with your actual image processing code)
-    count = LWCC.get_count(filename, model = sfanet_model, resize_img = True)
+    count = LWCC.get_count(filename, model = dmcount_model_a)
 
     # For demonstration purposes, let's just print the filename
     print(f"Image processed: {filename}")
