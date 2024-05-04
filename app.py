@@ -66,6 +66,8 @@ def countingService():
     count = LWCC.get_count(filename, model = modelToUse)
 
     print(f"Image processed: {filename}")
+
+    os.remove(filename)
     
     return jsonify({'message': 'success', 'count': int(count)}), 200
 
